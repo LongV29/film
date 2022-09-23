@@ -1,0 +1,148 @@
+.nav_container-1{
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,.3);
+  margin-bottom:20px;
+  z-index: 100;
+  justify-content: space-around;
+
+}
+.nav_container{
+    background-color: #121212;
+    width: 100%;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+.nav_logo {
+    padding-left: 60px;
+}
+.nav_logo img {
+    width: 100%;
+    height: 36px;
+    cursor: pointer;
+}
+.nav_input{
+    padding-right: 60px;
+    padding-left: 100px;
+}
+.nav_input input{
+height: 24px;
+outline: none;
+background-color: transparent;
+border: 1px solid white;
+padding: 16px 50px 16px 8px ;
+color: white;
+font-size: 16px;
+}
+.nav_menu{
+   line-height: 62px;
+   margin: 0;
+}
+.nav_menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+
+}
+.nav_menu li a:hover{
+    color: #ff9601;
+}
+.nav_menu li {
+    list-style: none;
+    padding: 0 11px;
+}
+.nav_search {
+    font-size: 24px;
+    transform: translateX(-28px);
+    color: white;
+    cursor: pointer;
+
+}
+.nav_menu-category{
+    display: none;
+    background: black;
+    position: absolute;
+    width: 350px;
+    line-height: 16px;
+    z-index: 100;
+}
+.nav_menu-category ul li a,
+.nav_national ul li a,
+.release ul li a,
+.top ul li a{
+    text-decoration: none;
+    padding: 0 11px;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    
+}
+.nav_menu-category ul,
+.nav_national ul,
+.release ul,
+.top ul{
+    padding: 0;
+}
+.nav_menu-category ul li ,
+.nav_national ul li ,
+.release ul li,
+.top ul li {
+    list-style: none;
+    line-height: 35px;
+    text-align: left;
+
+}
+.nav_category{
+    position: relative;
+}
+.nav_category:hover .nav_menu-category{
+    display: block;
+}
+.category{
+    padding-bottom: 8px;
+}
+.nav_national,
+.nav_menu-release,
+.nav_menu-top {
+  background-color:black;
+  position: absolute;
+  top : 62px ;
+  display: none ;
+  z-index: 100;
+}
+.nav_menu-national:hover .nav_national{
+    display: block;
+}
+.nav_release:hover .nav_menu-release {
+    display: block;
+}
+.nav_top:hover .nav_menu-top{
+    display: block;
+}
+
+
+@media only screen and (max-width: 1540px){
+    .nav_menu li{
+        
+    }
+    .input{
+        display: none;
+    }
+    .nav_container-1{
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .nav_search:focus ~.input{
+        display: block;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .nav_menu li{
+     display: none;
+    }
+}
+
